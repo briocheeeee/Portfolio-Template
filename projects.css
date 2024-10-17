@@ -1,0 +1,125 @@
+/* Global styles (including header) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+header {
+  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #b74b4b;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #b74b4b;
+  border-bottom: 3px solid #b74b4b;
+}
+
+/* Projects section styles */
+.projects {
+  padding: 5rem 9%;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #161616;
+  padding: 2rem;
+  border: 2px solid #b74b4b;
+  border-radius: 10px;
+  width: 350px;
+  transition: transform 0.3s;
+}
+
+.project-card h2 {
+  color: #ffcc00;
+  font-size: 2.5rem;
+}
+
+.project-card p {
+  font-size: 1.8rem;
+  color: #ddd;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border-color: #ffcc00;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.zoomable:hover {
+  transform: scale(1.1);
+}
+
+/* Lien vers GitHub */
+.project-card a {
+  color: #ffcc00;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #b74b4b;
+}
